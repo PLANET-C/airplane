@@ -1,14 +1,24 @@
 import { _decorator, Component, Node } from 'cc';
+import { Constant } from '../Framework/Constant';
 const { ccclass, property } = _decorator;
 
-@ccclass('Enemy')
-export class Enemy extends Component {
-    start() {
+const OUTOFRANGE = 13;
+@ccclass('EnemyPlane')
+export class EnemyPlane extends Component {
+  public enemySpeed = 0;
 
-    }
+  start() {}
 
-    update(deltaTime: number) {
-        
+  update(deltaTime: number) {
+    const position = this.node.position;
+    const z = position.z + this.enemySpeed;
+    this.node.setPosition(position.x, position.y, z);
+    if (z > OUTOFRANGE) {
+      this.node.destroy;
     }
+  }
+
+  show(speed: number) {
+    this.enemySpeed = speed;
+  }
 }
-

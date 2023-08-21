@@ -29,19 +29,19 @@
         "__id__": 15
       },
       {
-        "__id__": 28
+        "__id__": 30
       },
       {
-        "__id__": 37
+        "__id__": 39
       },
       {
-        "__id__": 36
+        "__id__": 38
       }
     ],
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 38
+      "__id__": 40
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -72,7 +72,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 39
+      "__id__": 41
     },
     "_id": "ac86b450-41df-4bfd-9a4b-2a20bf410664"
   },
@@ -582,6 +582,12 @@
       },
       {
         "__id__": 26
+      },
+      {
+        "__id__": 28
+      },
+      {
+        "__id__": 29
       }
     ],
     "removedComponents": []
@@ -594,7 +600,7 @@
     "propertyPath": [
       "_name"
     ],
-    "value": "Plane"
+    "value": "Plane01"
   },
   {
     "__type__": "cc.TargetInfo",
@@ -689,6 +695,36 @@
     ]
   },
   {
+    "__type__": "CCPropertyOverrideInfo",
+    "targetInfo": {
+      "__id__": 25
+    },
+    "propertyPath": [
+      "_lscale"
+    ],
+    "value": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    }
+  },
+  {
+    "__type__": "CCPropertyOverrideInfo",
+    "targetInfo": {
+      "__id__": 27
+    },
+    "propertyPath": [
+      "_lscale"
+    ],
+    "value": {
+      "__type__": "cc.Vec3",
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Canvas",
     "_objFlags": 0,
@@ -698,22 +734,22 @@
     },
     "_children": [
       {
-        "__id__": 29
+        "__id__": 31
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 31
-      },
-      {
-        "__id__": 32
-      },
-      {
         "__id__": 33
       },
       {
         "__id__": 34
+      },
+      {
+        "__id__": 35
+      },
+      {
+        "__id__": 36
       }
     ],
     "_prefab": null,
@@ -752,13 +788,13 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 28
+      "__id__": 30
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 30
+        "__id__": 32
       }
     ],
     "_prefab": null,
@@ -797,7 +833,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 29
+      "__id__": 31
     },
     "_enabled": true,
     "__prefab": null,
@@ -843,7 +879,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 28
+      "__id__": 30
     },
     "_enabled": true,
     "__prefab": null,
@@ -865,12 +901,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 28
+      "__id__": 30
     },
     "_enabled": true,
     "__prefab": null,
     "_cameraComponent": {
-      "__id__": 30
+      "__id__": 32
     },
     "_alignCanvasWithScreen": true,
     "_id": "deYk9eiM1O7YIY8PWP6QFH"
@@ -881,7 +917,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 28
+      "__id__": 30
     },
     "_enabled": true,
     "__prefab": null,
@@ -911,7 +947,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 28
+      "__id__": 30
     },
     "_enabled": true,
     "__prefab": null,
@@ -920,7 +956,7 @@
       "__id__": 15
     },
     "gameManager": {
-      "__id__": 35
+      "__id__": 37
     },
     "_id": "57gx8qZtVJ/qIghExqTu7Q"
   },
@@ -930,7 +966,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 36
+      "__id__": 38
     },
     "_enabled": true,
     "__prefab": null,
@@ -958,10 +994,21 @@
       "__expectedType__": "cc.Prefab"
     },
     "bulletRoot": {
-      "__id__": 37
+      "__id__": 39
     },
     "bulletSpeed": 0.35,
     "shootTime": 0.2,
+    "enemyPlane01": {
+      "__uuid__": "d7644722-1fc7-4474-aca7-2d5e1652be34",
+      "__expectedType__": "cc.Prefab"
+    },
+    "enemyPlane02": {
+      "__uuid__": "cc96c5ef-9550-4f8e-a282-b9d4dafda886",
+      "__expectedType__": "cc.Prefab"
+    },
+    "creatorEnemyPlaneTime": 1,
+    "enemyPlane01Speed": 0.1,
+    "enemyPlane02Speed": 0.1,
     "_id": "67LrHExFNO0ZYe8xbJ25Xq"
   },
   {
@@ -976,7 +1023,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 35
+        "__id__": 37
       }
     ],
     "_prefab": null,
@@ -1066,25 +1113,25 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 40
-    },
-    "shadows": {
-      "__id__": 41
-    },
-    "_skybox": {
       "__id__": 42
     },
-    "fog": {
+    "shadows": {
       "__id__": 43
     },
-    "octree": {
+    "_skybox": {
       "__id__": 44
     },
-    "skin": {
+    "fog": {
       "__id__": 45
     },
-    "lightProbeInfo": {
+    "octree": {
       "__id__": 46
+    },
+    "skin": {
+      "__id__": 47
+    },
+    "lightProbeInfo": {
+      "__id__": 48
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

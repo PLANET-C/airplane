@@ -14,7 +14,6 @@ export class Bullet extends Component {
     const position = this.node.position;
     const moveLength = position.z - this.bulletSpeed;
     this.node.setPosition(position.x, position.y, moveLength);
-
     if (moveLength > OUTOFRANGE) {
       this.node.destroy();
     }

@@ -17,14 +17,16 @@ export class UIMain extends Component {
     // systemEvent.on(SystemEvent.EventType.TOUCH_MOVE, this._mvPlane, this);
     // input.on(Input.EventType.TOUCH_MOVE, this._mvPlane, this);
     this.node.on(Input.EventType.TOUCH_START, this._touchStart, this);
+    //input也可以
+    input.on(Input.EventType.TOUCH_START, this._touchStart, this);
     this.node.on(Input.EventType.TOUCH_MOVE, this._mvPlane, this);
     this.node.on(Input.EventType.TOUCH_END, this._touchEnd, this);
   }
-  _touchStart(touch: Touch, event: SystemEvent) {
+  _touchStart() {
     this.gameManager.isShooting(true);
   }
 
-  _touchEnd(touch: Touch, event: SystemEvent) {
+  _touchEnd() {
     this.gameManager.isShooting(false);
   }
 
